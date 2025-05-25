@@ -83,9 +83,13 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 9. **Feature Selection for Regression**  
    Using stepwise regression and manual refinement, selected the 9 most predictive variables for modeling total spend.
 
+<img src="images/Feature-Selection.png" alt="Feature Selection" width="300"/>
+
 10. **Linear Regression Modeling and Evaluation**  
     Built a regression model to predict `Log Total Spend`.  
     Model achieved R² > 90% on both training and testing sets, indicating excellent accuracy.
+
+<img src="images/Linier-Regression-Evaluation.png" alt="Linier Regression Evaluation" width="300"/>
 
 11. **Target Selection & Modeling for Classification**  
     Initially attempted to predict complaints, but due to class imbalance, shifted to predicting customer `Response` to the latest campaign.  
@@ -93,6 +97,10 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
     - **Specificity:** 72.7% → Effectively excludes non-responders  
     - **Accuracy:** 75.7%, compared to a baseline of 86.3%  
     Despite lower accuracy, the model’s high sensitivity makes it highly valuable for targeting responsive customers in future campaigns.
+
+<img src="images/Threshold>0.09.png" alt="Threshold>0.09" width="300"/>
+<img src="images/Baseline-Accuracy.png" alt="Baseline Accuracy" width="300"/>
+<img src="images/Specificity-Sensitivity.png" alt="Specificity Sensitivity" width="300"/>
 
 12. **Customer Clustering (Segmentation)**  
     Hierarchical clustering was tested first, then refined using K-Means with 3 final clusters:
