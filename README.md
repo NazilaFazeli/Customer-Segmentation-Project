@@ -119,7 +119,6 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
   
 <img src="images/Demoghraphic1.png" alt="Demoghraphic1" width="400"/>
 <img src="images/Behavioral1.png" alt="Behavioral" width="400"/>
-<img src="images/Cluster6.png" alt="Cluster6" width="400"/>
 <img src="images/TotalSpend1.png" alt="TotalSpend1" width="400"/>
 
 These visualizations enabled intuitive exploration of customer traits, purchase behavior, and campaign engagement. The full dashboard collection can be accessed on [Tableau Public](https://public.tableau.com/views/CustomerDataAnalysisPredictiveModelling/TotalSpend5).
