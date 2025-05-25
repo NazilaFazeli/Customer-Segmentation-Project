@@ -112,10 +112,15 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 13. **Dashboard Visualization in Tableau**
     We created a series of dashboards in Tableau to explore and communicate customer insights. These dashboards were built using cleaned and feature-engineered data and were categorized as follows:
 
-- Demographic dashboards (2 views)
-- Behavioral dashboards (4 views)
-- Clustering dashboards (7 views)
-- Total Spend dashboards (5 views)
+- Demographic dashboards (2 dashboards)
+- Behavioral dashboards (4 dashboards)
+- Clustering dashboards (7 dashboards)
+- Total Spend dashboards (5 dashboards)
+  
+<img src="images/Demoghraphic1.png" alt="Demoghraphic1" width="400"/>
+<img src="images/Behavioral1.png" alt="Behavioral" width="400"/>
+<img src="images/Cluster6.png" alt="Cluster6" width="400"/>
+<img src="images/TotalSpend1.png" alt="TotalSpend1" width="400"/>
 
 These visualizations enabled intuitive exploration of customer traits, purchase behavior, and campaign engagement. The full dashboard collection can be accessed on [Tableau Public](https://public.tableau.com/views/CustomerDataAnalysisPredictiveModelling/TotalSpend5).
 
@@ -127,6 +132,9 @@ These visualizations enabled intuitive exploration of customer traits, purchase 
 - Cluster C: Customers with income levels similar to Cluster B, but whose spending remained flat despite income growth.
 
 By layering multiple dimensions (income, total spend, marital status), we identified Cluster B as a highly responsive group, offering valuable insights for targeted campaign planning.
+
+<img src="images/Cluster1.png" alt="Cluster1" width="400"/>
+<img src="images/Cluster3.png" alt="Cluster3" width="400"/>
 
 > This Tableau-based segmentation is separate from the K-Means clustering performed in Radiant and was discovered through exploratory visual analytics.
 
