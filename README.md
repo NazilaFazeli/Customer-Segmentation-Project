@@ -109,6 +109,9 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
     - **Low Spenders:** Minimal activity, possible churn risk  
     These clusters provide clear insights for campaign targeting, personalized offers, and loyalty strategies.
 
+<img src="images/Cluster-1.PNG" alt="Cluster-1" width="300"/>
+<img src="images/Cluster-2.JPG" alt="Cluster-2.JPG" width="300"/>
+
 13. **Cluster-Specific Model Evaluation**  
     Linear and classification models were re-tested within clusters.  
     The global model performed better overall, but the cluster structure remains useful for business segmentation and planning.
