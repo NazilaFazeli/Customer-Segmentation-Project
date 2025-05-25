@@ -9,22 +9,20 @@ The analysis was conducted in **Radiant** and visualized using **Tableau**, with
 
 ## 📌 Project Objectives
 
-- Predict total customer spending using regression techniques  
-- Identify customers likely to respond to marketing campaigns  
-- Segment customers based on demographic and behavioral attributes  
-- Provide actionable insights for targeted marketing, dashboard visualization, and retention strategies
+- Predict total customer spending using linear regression models.
+- Classify customer responses to marketing campaigns using GLM.
+- Segment customers using K-Means clustering based on behavioral and demographic data.
+- Visualize the analysis results and extract further behavioral patterns using Tableau dashboards.
+- Support marketing strategies through meaningful data-driven insights.
 
 ---
 
 ## 📊 Dataset Overview
 
-This project uses the **Customer Personality Analysis** dataset from Kaggle:  
-[https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
-
-The dataset includes:
-- Demographic information: Year of Birth, Income, Marital Status, Children
-- Behavioral data: Purchases in various categories, marketing campaign responses
-- Online/offline channel interactions: Web visits, catalog orders, store purchases
+- Name: Customer Personality Analysis  
+- Source: [Kaggle Dataset](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)  
+- Records: 2240 customers  
+- Features: Demographic and behavioral attributes including Year of Birth, Education, Marital Status, Income, Kidhome, Teenhome, Spending data, Campaign responses, etc.
 
 Original format: Excel  
 Cleaned and processed using Tableau, analyzed in Radiant, and visualized using Tableau Public.
@@ -68,8 +66,7 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 <img src="images/Relatioship-Status.JPG" alt="Relatioship Status" width="300"/>
 
 7. **Target Definition for Regression**  
-   Target: `Log Total Spend`  
-   Chosen due to the exponential relationship between spending and income.
+   We aimed to predict Total Spend, and log-transformed it (`Log_Total_Spend`) to better model the exponential relationship with income.
 
 <img src="images/Income-TotalSpend.JPG" alt="Income TotalSpend" width="300"/>
 <img src="images/Income-LogTotalSpend.PNG" alt="Income LogTotalSpend" width="300"/>
@@ -112,30 +109,28 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 <img src="images/Cluster-1.PNG" alt="Cluster-1" width="400"/>
 <img src="images/Cluster-2.JPG" alt="Cluster-2.JPG" width="400"/>
 
-13. **Cluster-Specific Model Evaluation**  
-    Linear and classification models were re-tested within clusters.  
-    The global model performed better overall, but the cluster structure remains useful for business segmentation and planning.
+13. **Dashboard Visualization in Tableau**
+    We created a series of dashboards in Tableau to explore and communicate customer insights. These dashboards were built using cleaned and feature-engineered data and were categorized as follows:
 
-14. **Data Visualization in Tableau**  
-    Transferred insights and summaries to Tableau and built dashboards visualizing demographic, behavioral, and predictive results.
+- Demographic dashboards (2 views)
+- Behavioral dashboards (4 views)
+- Clustering dashboards (7 views)
+- Total Spend dashboards (5 views)
 
-15. **Dashboard Creation & Storytelling**  
-    Dashboards were grouped into four thematic areas and published on Tableau Public for stakeholder access and presentation.
+These visualizations enabled intuitive exploration of customer traits, purchase behavior, and campaign engagement. The full dashboard collection can be accessed on [Tableau Public](https://public.tableau.com/views/CustomerDataAnalysisPredictiveModelling/TotalSpend5).
+
+14. **Visual Clustering & Behavioral Insight in Tableau**
+    Building upon the dashboards, an independent visual clustering analysis was conducted in Tableau. This revealed three distinct customer segments based on income, spending behavior, and household composition:
+
+- Cluster A: Higher-income customers whose total spend increased consistently with income.
+- Cluster B: Middle-income, predominantly single customers. As income increased, their spending also rose significantly — likely due to small household sizes and fewer expenses.
+- Cluster C: Customers with income levels similar to Cluster B, but whose spending remained flat despite income growth.
+
+By layering multiple dimensions (income, total spend, marital status), we identified Cluster B as a highly responsive group, offering valuable insights for targeted campaign planning.
+
+> This Tableau-based segmentation is separate from the K-Means clustering performed in Radiant and was discovered through exploratory visual analytics.
 
 ---
-
-## 📈 Final Dashboards (Tableau Public)
-
-The dashboards are grouped into four main categories:
-1. **Demographic Analysis** (2 dashboards)  
-2. **Behavioral Patterns** (4 dashboards)  
-3. **Customer Clustering** (7 dashboards)  
-4. **Total Spend Analysis** (5 dashboards)
-
-**[View the Interactive Dashboards on Tableau Public](https://public.tableau.com/views/CustomerDataAnalysisPredictiveModelling/TotalSpend5)**
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -164,14 +159,11 @@ customer-segmentation-project/
 
 ---
 
-## 🔧 Tools Used
+## ✅ Summary
 
-- **Radiant** – Data analysis, regression, classification, and clustering  
-- **Tableau** – Visualization and dashboard storytelling  
-- *(Python was not used in this project)*
+This project showcases a full data science pipeline: from raw data cleaning to advanced modeling and impactful visualization. It combines regression, classification, clustering, and Tableau dashboards to uncover actionable insights about customer behavior and campaign responsiveness — a foundation for smarter, data-driven marketing decisions.
 
 ---
-
 ## 👩‍💻 Author
 
 **Nazila Fazeli**  
