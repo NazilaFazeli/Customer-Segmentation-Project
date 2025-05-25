@@ -78,18 +78,18 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
    Analyzed multicollinearity among independent variables.  
    Although some variables were moderately correlated (70–75%), testing with multiple seeds confirmed these did not harm model performance.
 
-<img src="images/Correlation-Analysis.PNG" alt="Correlation Analysis" width="300"/>
+<img src="images/Correlation-Analysis.PNG" alt="Correlation Analysis" width="400"/>
 
 9. **Feature Selection for Regression**  
    Using stepwise regression and manual refinement, selected the 9 most predictive variables for modeling total spend.
 
-<img src="images/Feature-Selection.png" alt="Feature Selection" width="300"/>
+<img src="images/Feature-Selection.png" alt="Feature Selection" width="400"/>
 
 10. **Linear Regression Modeling and Evaluation**  
     Built a regression model to predict `Log Total Spend`.  
     Model achieved R² > 90% on both training and testing sets, indicating excellent accuracy.
 
-<img src="images/Linier-Regression-Evaluation.png" alt="Linier Regression Evaluation" width="300"/>
+<img src="images/Linier-Regression-Evaluation.png" alt="Linier Regression Evaluation" width="400"/>
 
 11. **Target Selection & Modeling for Classification**  
     Initially attempted to predict complaints, but due to class imbalance, shifted to predicting customer `Response` to the latest campaign.  
@@ -98,9 +98,9 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
     - **Accuracy:** 75.7%, compared to a baseline of 86.3%  
     Despite lower accuracy, the model’s high sensitivity makes it highly valuable for targeting responsive customers in future campaigns.
 
-<img src="images/Threshold>0.09.png" alt="Threshold>0.09" width="300"/>
-<img src="images/Baseline-Accuracy.png" alt="Baseline Accuracy" width="300"/>
-<img src="images/Specificity-Sensitivity.png" alt="Specificity Sensitivity" width="300"/>
+<img src="images/Threshold>0.09.png" alt="Threshold>0.09" width="400"/>
+<img src="images/Baseline-Accuracy.png" alt="Baseline Accuracy" width="400"/>
+<img src="images/Specificity-Sensitivity.png" alt="Specificity Sensitivity" width="400"/>
 
 12. **Customer Clustering (Segmentation)**  
     Hierarchical clustering was tested first, then refined using K-Means with 3 final clusters:
@@ -109,8 +109,8 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
     - **Low Spenders:** Minimal activity, possible churn risk  
     These clusters provide clear insights for campaign targeting, personalized offers, and loyalty strategies.
 
-<img src="images/Cluster-1.PNG" alt="Cluster-1" width="300"/>
-<img src="images/Cluster-2.JPG" alt="Cluster-2.JPG" width="300"/>
+<img src="images/Cluster-1.PNG" alt="Cluster-1" width="400"/>
+<img src="images/Cluster-2.JPG" alt="Cluster-2.JPG" width="400"/>
 
 13. **Cluster-Specific Model Evaluation**  
     Linear and classification models were re-tested within clusters.  
