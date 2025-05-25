@@ -53,6 +53,9 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 5. **Outlier Removal Using Statistical Methods**  
    Applied Z-Score and IQR methods to detect and remove statistical outliers. Z-Score was preferred for retaining more useful data.
 
+<img src="images/Income-outliers.PNG" alt="Income Outliers" width="300"/>
+<img src="images/MntMeatProducts-outliers.PNG" alt="MntMeatProducts outliers" width="300"/>
+
 6. **Feature Engineering**  
    Created several new variables:
    - `Family Size` (children)
