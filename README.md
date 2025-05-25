@@ -1,3 +1,5 @@
+![Project Banner](images/cover1.png)
+
 # Customer Segmentation & Predictive Modeling
 
 This project explores customer behavior using a rich dataset of demographic and transactional attributes.  
