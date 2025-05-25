@@ -58,19 +58,27 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 
 6. **Feature Engineering**  
    Created several new variables:
-   - `Family Size` (children)
+   - `Relationship Status` (Instead of Marital Status)
    - `Total Family Size` (children + marital status)
    - `Age` (from year of birth)
    - `Total Spend` (sum of spending on all product categories)
    - `Total Accepted Campaigns` (number of accepted offers)
+    
+<img src="images/Marital-Status.JPG" alt="IMarital Status" width="300"/>
+<img src="images/Relatioship-Status.JPG" alt="Relatioship Status" width="300"/>
 
 7. **Target Definition for Regression**  
    Target: `Log Total Spend`  
    Chosen due to the exponential relationship between spending and income.
 
+<img src="images/Income-TotalSpend.JPG" alt="Income TotalSpend" width="300"/>
+<img src="images/Income-LogTotalSpend.PNG" alt="Income LogTotalSpend" width="300"/>
+
 8. **Correlation Analysis for Regression**  
    Analyzed multicollinearity among independent variables.  
    Although some variables were moderately correlated (70–75%), testing with multiple seeds confirmed these did not harm model performance.
+
+<img src="images/Correlation-Analysis.PNG" alt="Correlation Analysis" width="300"/>
 
 9. **Feature Selection for Regression**  
    Using stepwise regression and manual refinement, selected the 9 most predictive variables for modeling total spend.
