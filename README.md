@@ -135,6 +135,7 @@ customer-segmentation-project/
 │       └── total_spend/
 ├── presentation/
 │   └── NazilaFazeli_Customer_Data_Analysis.pptx
+├── images/
 ├── README.md
 └── requirements.txt
 ```
