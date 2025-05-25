@@ -29,7 +29,7 @@ Cleaned and processed using Tableau, analyzed in Radiant, and visualized using T
 
 ---
 
-## 🧭 Project Workflow (15 Steps)
+## 🧭 Project Workflow (14 Steps)
 
 
 
